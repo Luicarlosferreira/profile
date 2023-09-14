@@ -10,11 +10,7 @@ import { ThemeProvider } from "next-themes";
 const judson = Judson({ weight: ["400", "700"], subsets: ["latin"] });
 
 export const metadata = {
-  title: {
-    default: "Profile Web Developer",
-    applicationName: "Next.js",
-    owner: "Luis Carlos Ferreira Carneiro",
-  },
+  title: "Profile Web Developer",
   description:
     "This is my profile. Here i'm showing what my abilities, and with what i have knowledge. So, enjoy my profile and thank you for beeing here.",
   robots: {
