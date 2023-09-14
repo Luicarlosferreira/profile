@@ -1,4 +1,6 @@
 "use client";
+import type { Metadata } from "next";
+
 import { usePathname } from "next/navigation";
 import "./globals.css";
 
@@ -9,7 +11,7 @@ import { ThemeProvider } from "next-themes";
 
 const judson = Judson({ weight: ["400", "700"], subsets: ["latin"] });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Profile Web Developer",
   description:
     "This is my profile. Here i'm showing what my abilities, and with what i have knowledge. So, enjoy my profile and thank you for beeing here.",
