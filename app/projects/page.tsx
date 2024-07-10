@@ -11,7 +11,7 @@ export default function Projects() {
       </div>
       <section className="flex flex-col  mt-36 gap-4 pb-10 w-3/4 lg:w-full lg:p-16 fullSm:p-5">
         <hr className="w-96  dark:text-white sm:w-full" />
-        <p> Some Projects</p>
+        <p> Projects</p>
         <div className="w-full gap-10 flex flex-wrap sm:flex-col">
           {gitProjects.map((item) => {
             return (
