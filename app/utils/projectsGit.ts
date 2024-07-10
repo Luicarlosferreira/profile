@@ -56,6 +56,12 @@ const gitProjects: IProjects[] = [
     title: "E-commerce with products and redirect to whatsapp if want to buy",
     link: "https://scartech-client.vercel.app/",
   },
+  {
+    id: 11,
+    title:
+      "Convert the most popular world currencies at effective exchanges rates with the Useful Exchange Rate calculator",
+    link: "https://useful-exchange-rate.vercel.app/",
+  },
 ];
 
 export default gitProjects;

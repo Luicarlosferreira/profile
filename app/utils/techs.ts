@@ -8,7 +8,7 @@ const frontTechs: string[] = [
   "CSS",
   "CSS MODULES",
   "STYLED-COMPONENTS",
-  "TAILWIND",
+  "TAILWIND CSS",
   "BOOTSTRAP",
   "MATERIAL UI",
   "FIGMA",
