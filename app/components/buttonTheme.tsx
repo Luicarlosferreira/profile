@@ -4,7 +4,7 @@ import { useTheme } from "next-themes";
 import { SunIcon, MoonIcon } from "@heroicons/react/24/solid";
 
 const ThemeButton = () => {
-  const { theme, setTheme } = useTheme("");
+  const { theme, setTheme } = useTheme();
   const [isMounted, setIsMounted] = useState(false);
   useEffect(() => {
     setIsMounted(true);
