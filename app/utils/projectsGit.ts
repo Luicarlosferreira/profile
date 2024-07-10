@@ -58,8 +58,7 @@ const gitProjects: IProjects[] = [
   },
   {
     id: 11,
-    title:
-      "Convert the most popular world currencies at effective exchanges rates with the Useful Exchange Rate calculator",
+    title: "Convert exchanges rates with the Useful Exchange Rate calculator",
     link: "https://useful-exchange-rate.vercel.app/",
   },
 ];
