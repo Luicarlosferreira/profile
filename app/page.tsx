@@ -6,7 +6,7 @@ export default function Home() {
         <h1 className="text-5xl font-bold lg:text-4xl md:text-3xl sm:text-xxl fullSm:text-xl">
           Luis Carlos Ferreira Carneiro
         </h1>
-        <p className="tracking-widest">Software Engineer</p>
+        <p className="tracking-widest">Web Developer</p>
       </div>
       <hr className="w-full" />
       <SectionTechs />
