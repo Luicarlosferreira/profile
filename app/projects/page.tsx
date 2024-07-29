@@ -1,7 +1,7 @@
 import ProjectCards from "../components/projectsCard";
 import Link from "next/link";
 import gitProjects from "../utils/projectsGit";
-
+import CarouselPlugin from "../components/projectCarousel"
 export default function Projects() {
   return (
     <main className="flex flex-col items-start pl-16  lg:pl-0">
