@@ -11,15 +11,16 @@ export default function Menu() {
     setIsActive(false);
     ScrollBehavior();
   };
-  const checkWindow = window !== 'undefined
-    
-    if(checkWindow){
-    window.addEventListener("scroll", () => {
-    const scrollTop = document.documentElement.scrollTop;
-    setHeight(scrollTop);
-   )}
 
-}
+
+
+ useEffect(() => {
+    window.addEventListener("scroll", () => {
+      const scrollTop = document.documentElement.scrollTop;
+      setHeight(scrollTop);
+    });
+
+  }, []);
 
   return (
     <>
