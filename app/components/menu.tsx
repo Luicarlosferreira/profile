@@ -11,10 +11,13 @@ export default function Menu() {
     setIsActive(false);
     ScrollBehavior();
   };
-  typeof window !== 'undefined &&  window.addEventListener("scroll", () => {
+  const checkWindow = window !== 'undefined
+    
+    if(checkWindow){
+    window.addEventListener("scroll", () => {
     const scrollTop = document.documentElement.scrollTop;
     setHeight(scrollTop);
-  });
+   )}
 
 }
 
