@@ -11,7 +11,7 @@ export default function Menu() {
     setIsActive(false);
     ScrollBehavior();
   };
-  if (typeof window !== 'undefined') {
+  if (typeof window !== 'undefined' && typeof window !== 'null') {
   window.addEventListener("scroll", () => {
     const scrollTop = document.documentElement.scrollTop;
     setHeight(scrollTop);
