@@ -17,7 +17,7 @@ export default function Menu() {
  useEffect(() => {
     window.addEventListener("scroll", () => {
       const scrollTop = document.documentElement.scrollTop;
-      setHeight(scrollTop);
+      setHeight(scrollTop)
     });
 
   }, []);
