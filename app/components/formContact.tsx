@@ -46,7 +46,7 @@ const ContactForm = () => {
   if (loading) {
     return (
       <p className="text-center self-center tracking-widest w-full text-green-400">
-        Sending your email...
+        {"Almost there..."}
       </p>
     );
   }

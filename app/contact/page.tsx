@@ -8,7 +8,8 @@ export default function Contact() {
       </div>
       <ContactForm />
       <p className="self-center dark:text-white opacity-25 mb-10 tracking-widest">
-        I appreciate your visit on my profile
+        {"You're very Welcome."}
+
       </p>
     </main>
   );
