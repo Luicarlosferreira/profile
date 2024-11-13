@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 import { useRouter } from "next/navigation";
@@ -16,9 +16,7 @@ const ContactForm = () => {
     publicId: process.env.NEXT_PUBLIC_PUBLIC_ID,
   };
 
-  const sendEmail = async (
-    event: React.FormEvent<HTMLFormElement | HTMLFormElement>
-  ) => {
+  const sendEmail = async (event: React.FormEvent<HTMLFormElement | HTMLFormElement>) => {
     event.preventDefault();
     setError(false);
     setLoading(true);
@@ -60,6 +58,7 @@ const ContactForm = () => {
             <input
               minLength={4}
               autoComplete="given-name"
+              alt="accessibility input"
               required
               type="text"
               placeholder="First Name"
@@ -68,13 +67,12 @@ const ContactForm = () => {
             />
           </div>
           <div className="flex flex-col w-full gap-1">
-            <label className="tracking-widest dark:text-white opacity-75">
-              Last Name
-            </label>
+            <label className="tracking-widest dark:text-white opacity-75">Last Name</label>
             <input
               minLength={4}
               required
               autoComplete="family-name"
+              alt="accessibility input"
               type="text"
               placeholder="Last Name"
               name="user_last_name"
@@ -83,14 +81,13 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="flex flex-col w-2/1 gap-1">
-          <label className="tracking-widest dark:text-white opacity-75">
-            Email
-          </label>
+          <label className="tracking-widest dark:text-white opacity-75">Email</label>
           <input
             minLength={6}
             required
             type="email"
             placeholder="E-mail"
+            alt="accessibility input"
             name="user_email"
             autoComplete="email"
             className="placeholder:tracking-widest dark:placeholder:text-white dark:placeholder:opacity-25 dark:focus:border-blue-600 focus:border-blue-600 pt-2 pb-1 outline-none bg-transparent border-b dark:border-white dark:border-opacity-25 transition-all"
@@ -105,14 +102,13 @@ const ContactForm = () => {
         />
         <input
           type="submit"
+          alt="accessibility input"
           value="Send"
           className="dark:hover:border-blue-600  hover:border-blue-600  outline-none  border w-1/3 p-3 dark:border-white dark:border-opacity-25 transition-all bg-transparent cursor-pointer fullSm:w-3/4 fullSm:self-center"
         />
       </form>
       {error && (
-        <p className="text-center mt-6 text-red-600">
-          Something was wrong! Please Try again.
-        </p>
+        <p className="text-center mt-6 text-red-600">Something was wrong! Please Try again.</p>
       )}
     </div>
   );
